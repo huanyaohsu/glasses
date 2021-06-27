@@ -982,4 +982,95 @@ nav {
     border: none;
     color: #ffffff; }
 
+.series {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 63px; }
+  .series li {
+    border: 1px solid #dcdcdc;
+    width: 462px; }
+    .series li a {
+      padding: 24px 0 4px;
+      color: #000000; }
+      .series li a:hover {
+        color: #650300; }
+      .series li a img {
+        margin-right: 6px; }
+      .series li a h3:hover {
+        border-bottom: 1px solid #650300; }
+
+.active {
+  border-bottom: 16px solid #aa0601; }
+
+.product-banner {
+  margin-bottom: 88px; }
+  .product-banner img {
+    width: calc(100% / 2 - 15px); }
+
+.product-title {
+  font-size: 42px;
+  line-height: 63px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px; }
+  .product-title h4 {
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Noto Sans", sans-serif; }
+
+.product-main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.product-card {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  width: 255px;
+  margin-bottom: 104px; }
+  .product-card img {
+    height: 164px;
+    width: 100%; }
+
+.card-title {
+  font-size: 1.5rem;
+  line-height: 36px; }
+  .card-title p {
+    font-size: 1.5rem;
+    color: #aa0601; }
+
+.product-color-dark {
+  background-color: #5f3e2d;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-right: 8px; }
+
+.product-color-light {
+  background-color: #b75929;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px; }
+
+.price {
+  font-weight: 500; }
+
+.product-nav {
+  font-size: 1.25rem;
+  line-height: 29px;
+  font-weight: 400;
+  margin-bottom: 156px; }
+  .product-nav li {
+    border: 1px solid #555555;
+    border-right: 0; }
+    .product-nav li a {
+      color: #555555;
+      padding: 10px 15px; }
+  .product-nav:last-child {
+    border-right: 1px solid #555555; }
+  .product-nav .active {
+    background-color: #000000;
+    border: none;
+    color: #ffffff; }
+
 /*# sourceMappingURL=all.css.map */
