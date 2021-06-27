@@ -1,0 +1,24 @@
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.d-column {
+  flex-direction: column;
+}
+.mr-30 {
+  margin-right: 30px;
+}
