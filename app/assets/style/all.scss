@@ -1,13 +1,11 @@
-@import "reset";
-@import "variable";
-@import "mixin";
-@import "base";
-@import "utilities";
+@import 'reset';
+@import 'variable';
+@import 'mixin';
+@import 'base';
+@import 'utilities';
 
-@import "layout";
-@import "_pages/index";
-@import "_pages/location";
-@import "_pages/product"
-
-
-
+@import 'layout';
+@import '_pages/index';
+@import '_pages/location';
+@import '_pages/product';
+@import '_pages/product-sun';
