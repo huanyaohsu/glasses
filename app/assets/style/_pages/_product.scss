@@ -8,13 +8,31 @@
     border: 1px solid $border;
     width: 462px;
     a {
-      padding: 24px 0 4px;
       color: $black;
+      padding: 24px 0 4px;
+      @include pad {
+        padding: 16px 0 16px;
+      }
+      @include mobile {
+        padding: 8px 0 8px;
+      }
+      @include pad {
+        font-size: $h3-font-size;
+        line-height: 42px;
+      }
       &:hover {
         color: $text-primary;
       }
       img {
         margin-right: 6px;
+        @include pad {
+          height: 32px;
+          width: 32px;
+        }
+        @include mobile {
+          height: 14px;
+          height: 14px;
+        }
       }
       h3:hover {
         border-bottom: 1px solid $text-primary;
@@ -24,33 +42,69 @@
 }
 .active {
   border-bottom: 16px solid $text-secondary;
+  @include pad {
+    border-bottom: 8px solid $text-secondary;
+  }
+  @include mobile {
+    border-bottom: 4px solid $text-secondary;
+  }
 }
 .product-banner {
   margin-bottom: 88px;
   img {
     width: calc(100% / 2 - 15px);
+    height: 309px;
+    object-fit: cover;
+    @include pad {
+      width: 50%;
+      margin-right: 0px;
+    }
+    @include mobile {
+      height: 144px;
+    }
   }
 }
 .product-title {
   font-size: 42px;
   line-height: 63px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   margin-bottom: 40px;
+  @include pad {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  @include mobile {
+    font-size: $h5-font-size;
+  }
   h4 {
     font-size: 32px;
     line-height: 48px;
+    font-weight: 400;
     font-family: $font-family-base;
   }
 }
 .product-main {
   flex-wrap: wrap;
+  @include mobile {
+    justify-content: center;
+  }
 }
 .product-card {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   width: 255px;
   margin-bottom: 104px;
+  @include pad {
+    width: 330px;
+    margin-bottom: 72px;
+  }
+  @include mobile {
+    width: 345px;
+    margin-bottom: 32px;
+  }
   img {
+    object-fit: cover;
     height: 164px;
     width: 100%;
   }
@@ -58,6 +112,9 @@
 .card-title {
   font-size: $h4-font-size;
   line-height: 36px;
+  @include pad {
+    line-height: 30px;
+  }
   p {
     font-size: $h4-font-size;
     color: $text-secondary;
@@ -84,6 +141,14 @@
   line-height: 29px;
   font-weight: 400;
   margin-bottom: 156px;
+  @include pad {
+    font-size: 19px;
+    line-height: 18px;
+    margin-bottom: 104px;
+  }
+  @include mobile {
+    font-size: 12px;
+  }
   li {
     border: 1px solid #555555;
     border-right: 0;

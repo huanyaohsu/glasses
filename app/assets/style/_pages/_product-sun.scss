@@ -1,58 +1,36 @@
-.series {
-  font-family: 'Roboto', sans-serif;
-  color: $black;
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 63px;
-  li {
-    border: 1px solid $border;
-    width: 462px;
-    a {
-      padding: 24px 0 4px;
-      color: $black;
-      &:hover {
-        color: $text-primary;
-      }
-      img {
-        margin-right: 6px;
-      }
-      h3:hover {
-        border-bottom: 1px solid $text-primary;
-      }
-    }
-  }
-}
-.active {
-  border-bottom: 16px solid $text-secondary;
-}
-.product-banner {
-  margin-bottom: 88px;
-  img {
-    width: calc(100% / 2 - 15px);
-  }
-}
-.product-title {
-  font-size: 42px;
-  line-height: 63px;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 40px;
-  h4 {
-    font-size: 32px;
-    line-height: 48px;
-    font-family: $font-family-base;
-  }
-}
-.product-main {
+.sun-main {
   flex-wrap: wrap;
+  @include pad {
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
 }
-.product-card {
+.sun-card {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   width: 255px;
   margin-bottom: 104px;
+  @include pad {
+    width: 330px;
+    margin-bottom: 72px;
+  }
+  @include mobile {
+    width: 345px;
+    margin-bottom: 32px;
+  }
   img {
     height: 164px;
     width: 100%;
+    object-fit: cover;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #aa0601;
   }
 }
 .card-title {
@@ -63,41 +41,19 @@
     color: $text-secondary;
   }
 }
-.product-color-dark {
-  background-color: #5f3e2d;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-.product-color-light {
-  background-color: #b75929;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-}
 .price {
   font-weight: 500;
 }
-.product-nav {
-  font-size: $h5-font-size;
-  line-height: 29px;
-  font-weight: 400;
-  margin-bottom: 156px;
-  li {
-    border: 1px solid #555555;
-    border-right: 0;
-    a {
-      color: #555555;
-      padding: 10px 15px;
-    }
-  }
-  &:last-child {
-    border-right: 1px solid #555555;
-  }
-  .active {
-    background-color: $black;
-    border: none;
-    color: $white;
-  }
+.sun-color-dark {
+  background-color: #5f3e2d;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.sun-color-light {
+  background-color: #b75929;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
 }
